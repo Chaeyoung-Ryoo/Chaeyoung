@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko-KR" prefix="og: http://ogp.me/ns#" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, viewport-fit=cover">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+        <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/booking-layout.css">
+        <link rel="stylesheet" href="../css/responsive-layout.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+        <title>예약하기:: D Museum</title>
+        <meta property="og:url" content="웹페이지 url">
+        <meta property="og:title" content="예약하기 - D Museum">
+        <meta property="og:image" content="이미지"> <!-- 1200 x 630 -->
+        <meta property="og:description" content="현재 디뮤지엄은 코로나19로 인해 사전 예약제로 운영하고 있습니다.">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko-KR">
+        <script src="../js/ua-detection.js"></script>
+
+
+    </head>
+
+    <body>
+        <header class="fixed-header" role="banner">
+            <div class="mobile-gnb">
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb-header">
+                        <a class="mobile-gnb-home" href="../html/main.html" rel="home">
+                            <svg class="logo" role="img" aria-label="D Museum Logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                        <button type="button" id="burger" class="mobile-gnb-btn">
+                            <span class="bread-crust-top bread-crust"></span>
+                            <span class="bread-crust-middle bread-crust"></span>
+                            <span class="bread-crust-bottom bread-crust"></span>
+                        </button>
+                    </div>
+                    <ul class="mobile-gnb-list">
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">현재 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">지난 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/booking.html">예약하기</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">프로그램</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">미술관 소개</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">관람 안내</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/dstory.html">D Story</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="desktop-gnb row">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/main.html" rel="home">
+                            <svg class="logo" role="img" aria-label="D Museum Logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">현재 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">지난 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/booking.html">예약하기</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">프로그램</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">미술관 소개</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">관람 안내</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/dstory.html">D STORY</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-heading">
+                <div class="page-heading-wrap row">
+                    <div class="page-heading-txt">예약하기</div>
+                </div>
+            </section>
+            <section class="booking row">
+                <div class="booking-wrap">
+                    <figure class="ex-img"></figure>
+                    <div class="ex-info">
+                        <h3 class="ex-title">Sound Museum : 너의 감정과 기억</h3>
+                        <div class="ex-detail">
+                            <div class="ex-description">
+                                디뮤지엄 역대 최대 규모의 공감각적 전시.
+                            </div>
+                            <div class="ex-detail-box">
+                                <h3>전시 기간</h3>
+                                <div class="ex-period">
+                                    2021.01.01 - 2021.12.31
+                                </div>
+                            </div>
+                            <div class="ex-detail-box">
+                                <h3>관람 안내</h3>
+                                <div class="ex-hours">
+                                    월요일 휴관<br>
+                                    화요일 - 금요일 : 10:00 오전 - 6:00 오후<br>
+                                    주말 : 10:00 오전 - 8:00 오후
+                                </div>
+                            </div>
+                            <div class="ex-detail-box">
+                                <h3>관람료</h3>
+                                <div class="ex-price">
+                                    성인(20세 이상) : 15,000원<br>
+                                    학생(8-19세) : 7,000원<br>
+                                    미취학 아동(36개월-7세) : 5,000원
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-btn">
+                            <a href="#" class="booking-btn-link">예약하기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="exhibition-banner row">
+                <div class="e-banner">
+                    <div class="e-banner-txt">
+                        <h3 class="e-banner-title">Sound Museum : 너의 감정과 기억</h3>
+                        <div class="e-banner-link-box">
+                            <a class="e-banner-link" href="../html/exhibition.html">
+                                <span class="e-banner-link-txt">전시 소개</span>
+                                <span class="material-icons material-icons-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="faq-wrap row">
+                    <h3 class="faq-heading">예약 시 유의 사항</h3>
+                    <div class="faq-text">
+                        현재 디뮤지엄은 코로나 19로 인해 사전 예약제로 운영하고 있습니다.
+                        <br>
+                        감염병예방법 제 49조 제 1항 제2의 2호에 의해 관람객 분들은 출입명단 작성 및 마스크 착용 등 방역지침을 준수해야 합니다.
+                        <br>
+                        미술관 자체 및 외부인의 모든 전시해설을 잠정 중단합니다.
+                        <br>
+                        그 밖의 문의 사항은 <span class="tel"><a href="tel:0262337200">02-6233-7200</a></span>으로 문의하시길 바랍니다.
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-wrap row">
+                <div class="footer-top">
+                    <ul class="footer-legal">
+                        <li>
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">문화체육관광부</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-sns">
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.youtube.com/user/DaelimMuseum" target="_blank">Youtube</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.instagram.com/daelimmuseum/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.facebook.com/daelimmuseum" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-name">(재)대림문화재단</div>
+                    <ul class="footer-info">
+                        <li>사업자등록번호 : 305-82-09028</li>
+                        <li>주소 : 서울특별시 종로구 자하문로4길 21(통의동 35-1)</li>
+                        <li>대표전화 : 02-6233-7200</li>
+                    </ul>
+                    <div class="footer-copyright">
+                        Copyright ⓒ 2021 Daelim Museum. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

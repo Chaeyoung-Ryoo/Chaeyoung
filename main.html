@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko-KR" prefix="og: http://ogp.me/ns#" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, viewport-fit=cover">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+        <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main-layout.css">
+        <link rel="stylesheet" href="../css/responsive-layout.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+        <title>D Museum</title>
+        <meta property="og:url" content="웹페이지 url">
+        <meta property="og:title" content="D Museum">
+        <meta property="og:image" content="이미지"> <!-- 1200 x 630 -->
+        <meta property="og:description" content="일상을 새롭게 디자인하는 문화 예술 플랫폼, 디뮤지엄입니다!">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko-KR">
+        <script src="../js/ua-detection.js"></script>
+
+    </head>
+    <body>
+        <header class="fixed-header" role="banner">
+            <div class="mobile-gnb">
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb-header">
+                        <a class="mobile-gnb-home" href="../html/main.html" rel="home">
+                            <svg class="logo" role="img" aria-label="D Museum Logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                        <button type="button" id="burger" class="mobile-gnb-btn">
+                            <span class="bread-crust-top bread-crust"></span>
+                            <span class="bread-crust-middle bread-crust"></span>
+                            <span class="bread-crust-bottom bread-crust"></span>
+                        </button>
+                    </div>
+                    <ul class="mobile-gnb-list">
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">현재 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">지난 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/booking.html">예약하기</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">프로그램</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">미술관 소개</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">관람 안내</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/dstory.html">D Story</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="desktop-gnb row">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/main.html">
+                            <svg class="logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">현재 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">지난 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/booking.html">예약하기</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">프로그램</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">미술관 소개</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">관람 안내</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/dstory.html">D STORY</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="opening-hours">
+                <div class="opening-hours-contents row">
+                    <a class="opening-hours-link" href="../html/info.html">
+                        관람 시간 10:00 - 18:00, 매주 <span class="monday">월요일 </span>휴관
+                    </a>
+                </div>
+            </section>
+            <section class="mainbanner">
+                <div class="mainbanner-txtbox">
+                    <h2 class="mainbanner-title">Sound Museum</h2>
+                    <h3 class="mainbanner-subtitle">
+                        디뮤지엄 개관 이래 최대 규모로 선보이는<br>
+                        새로운 장르의 공감각적 기획 전시.
+                    </h3>
+                    <div class="mainbanner-button">
+                        <a class="mb-btn" href="../html/exhibition.html">더 알아보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="main-dstory">
+                <div class="main-dstory-wrap row-wide">
+                    <div class="main-dstory-title">
+                        <h2 class="main-dstory-title-heading">D STORY</h2>
+                        <h3 class="main-dstory-subtitle">큐레이터가 전하는 색다른 전시 이야기</h3>
+                    </div>
+                    <div class="main-dstory-article-wrap">
+                        <article class="main-dstory-box">
+                            <figure class="main-dstory-img">
+                                <img src="../img/main-dstory01.jpg" alt="사운드 뮤지엄">
+                            </figure>
+                            <header class="main-dstory-txtbox">
+                                <h3 class="main-ds-article-title">Sound Museum: 너의 감정과 기억</h3>
+                                <div class="main-ds-article-date">2020년 9월 13일</div>
+                                <div class="main-ds-hidden-contents">
+                                    디뮤지엄의 2020년 첫 전시가 드디어 다가오는 5월 19일에 개최됩니다.
+                                </div>
+                            </header>
+                            <a class="main-dstory-article-link" href="../html/dstory.html"></a>
+                        </article>
+                        <article class="main-dstory-box">
+                            <figure class="main-dstory-img">
+                                <img src="../img/main-dstory02.jpg" alt="랩212">
+                            </figure>
+                            <header class="main-dstory-txtbox">
+                                <h3 class="main-ds-article-title">랩212, 나의 리듬이 빛나는 음악이 되어</h3>
+                                <div class="main-ds-article-date">2020년 7월 11일</div>
+                                <div class="main-ds-hidden-contents">
+                                    <p class="main-ds-text">
+                                        파리를 기반하여 미디어 인터랙티브 디자이너들이 2008년에 설립한 아티스트 그룹, Lab212.
+                                    </p>
+                                </div>
+                            </header>
+                            <a class="main-dstory-article-link" href="../html/dstory.html"></a>
+                        </article>
+                        <article class="main-dstory-box">
+                            <figure class="main-dstory-img">
+                                <img src="../img/main-dstory03.jpg" alt="바스쿠와 클루그">
+                            </figure>
+                            <header class="main-dstory-txtbox">
+                                <h3 class="main-ds-article-title">바스쿠와 클루그의 작품</h3>
+                                <div class="main-ds-article-date">2020년 6월 8일</div>
+                                <div class="main-ds-hidden-contents">
+                                    <p class="main-ds-text">
+                                        숨을 한 번 들이마시고 호흡을 불어넣으면, 숨결을 따라 이동하는 빛과 신비로운 사운드를 감상할 수 있다.
+                                    </p>
+                                </div>
+                            </header>
+                            <a class="main-dstory-article-link" href="../html/dstory.html"></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="dletter">
+                <div class="dletter-wrap row">
+                    <h2 class="dletter-title">D LETTER</h2>
+                    <div class="dletter-maintxt">
+                        디뮤지엄이 큐레이션한<br>다양한 정보를 받아 보세요.
+                    </div>
+                    <p class="dletter-subtxt">
+                        예술적 대화를 위한 넓고 얕은 정보와 미술관 직원들로부터 듣는 문화 예술 인사이트
+                    </p>
+                    <div class="dletter-link">
+                        <a class="dl-btn subscribe-btn" href="#">구독하기</a>
+                        <a class="dl-btn" href="#">더 알아보기</a>
+                    </div>
+                    <figure class="dletter-img">
+                        <img src="../img/dletter.jpg" alt="디레터 구독하기">
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-wrap row">
+                <div class="footer-top">
+                    <ul class="footer-legal">
+                        <li>
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                         <li>
+                            <a href="#">문화체육관광부</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-sns">
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.youtube.com/user/DaelimMuseum" target="_blank">Youtube</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.instagram.com/daelimmuseum/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                             <a rel="nofollow noreferrer" href="https://www.facebook.com/daelimmuseum" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-name">(재)대림문화재단</div>
+                    <ul class="footer-info">
+                        <li>사업자등록번호 : 305-82-09028</li>
+                        <li>주소 : 서울특별시 종로구 자하문로4길 21(통의동 35-1)</li>
+                        <li>대표전화 : 02-6233-7200</li>
+                    </ul>
+                    <div class="footer-copyright">
+                            Copyright ⓒ 2021 Daelim Museum. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
