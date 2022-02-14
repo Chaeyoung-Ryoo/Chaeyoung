@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko-KR" prefix="og: http://ogp.me/ns#" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+        <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="../css/swiper.css"></script>
+        <script src="../css/swiper.min.css"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="../css/exhibition-layout.css">
+        <link rel="stylesheet" href="../css/responsive-layout.css">
+        <script src="../js/swiper.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+        <title>현재 전시:: D Museum</title>
+        <meta property="og:url" content="웹페이지 url">
+        <meta property="og:title" content="D Museum">
+        <meta property="og:image" content="../img/og-image.jpg">
+        <meta property="og:description" content="지금 디뮤지엄에서 진행중인 전시를 만나보세요.">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko-KR">
+        <script src="../js/ua-detection.js"></script>
+    </head>
+    <body>
+        <script>
+            AOS.init();
+        </script>
+        <header class="fixed-header" role="banner">
+            <div class="mobile-gnb">
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb-header">
+                        <a class="mobile-gnb-home" href="../html/main.html" rel="home">
+                            <svg class="logo" role="img" aria-label="D Museum Logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                        <button type="button" id="burger" class="mobile-gnb-btn">
+                            <span class="bread-crust-top bread-crust"></span>
+                            <span class="bread-crust-middle bread-crust"></span>
+                            <span class="bread-crust-bottom bread-crust"></span>
+                        </button>
+                    </div>
+                    <ul class="mobile-gnb-list">
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">현재 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">지난 전시</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/booking.html">예약하기</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/exhibition.html">프로그램</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">미술관 소개</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/info.html">관람 안내</a>
+                        </li>
+                        <li class="mobile-gnb-item">
+                            <a class="mobile-gnb-link" href="../html/dstory.html">D Story</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="desktop-gnb row">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/main.html">
+                            <svg class="logo" viewBox="0 0 46 46">
+                                <path class="st0" d="M23,0.3C10.4,0.3,0.3,10.4,0.3,23c0,12.6,10.2,22.7,22.7,22.7S45.7,35.6,45.7,23C45.7,10.4,35.6,0.3,23,0.3z
+                                     M23,40.3c-9.6,0-17.3-7.7-17.3-17.3S13.4,5.7,23,5.7S40.3,13.4,40.3,23S32.6,40.3,23,40.3z"/>
+                                <path class="st0" d="M32.1,29.5c0,0,0-7.4,0-13.1c0-5.6-8.5-5.6-8.5-5.6s-8.3,0-9,0c-0.7,0-0.8,0.7-0.8,0.7s0,22.2,0,23
+                                    s0.7,0.8,0.7,0.8h10.1C32.5,35.2,32.1,29.5,32.1,29.5z M23.6,30.3h-3.4c0,0-0.2,0-0.2-0.5c0-0.5,0-13.7,0-13.7s0-0.4,0.3-0.4
+                                    s3,0,3,0s2.9,0,2.9,3.3c0,3.4,0,7.8,0,7.8S26.2,30.3,23.6,30.3z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">현재 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">지난 전시</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/booking.html">예약하기</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/exhibition.html">프로그램</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">미술관 소개</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/info.html">관람 안내</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-item-link" href="../html/dstory.html">D STORY</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-heading">
+                <div class="page-heading-wrap row">
+                    <div class="page-heading-txt">전시 소개</div>
+                </div>
+            </section>
+            <div class="exhibition-info">
+                <div class="exhibition-info-wrap">
+                    <section class="ei-intro row-wide">
+                        <h2 class="ei-intro-title">
+                             SOUNDMUSEUM: 너의 감정과 기억
+                        </h2>
+                        <div class="ei-intro-txt">
+                            디뮤지엄이 2020년 5월 19일부터 12월 27일까지 듣는 경험과 보는 것을 통해 감성을 확장하는 새로운 장르의 공감각적 기획 전시 'SOUNDMUSEUM: 너의 감정과 기억'을 개최합니다.<br>
+                            세계적인 작가 13팀의 사운드 인스톨레이션, 관객주도형 퍼포먼스, 인터렉티브 라이트 아트, 비주얼 뮤직 등의 사운드, 비주얼 아트 작품을 다양한 범주로 소개하는 이번 전시는 기존 두 층의 전시실 이외에 미술관 외부의 특별한 공간까지 확장되어 디뮤지엄 개관 이래 최대 규모로 선보여집니다.<br>
+                            전시는 이를 통해 우리에게 지각적, 정서적으로 떠오른 감정과 기억을 감각 이상의 울림으로 전달할 것입니다.
+                        </div>
+                        <figure class="exhibition-video">
+                            <video muted autoplay loop playsinline poster="">
+                                <source src="../img/video-1920.mp4" type="video/mp4">
+                            </video>
+                        </figure>
+                    </section>
+                    <section class="ei-contents">
+                        <div class="ei-contents-txtbox">
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">역대 최대 규모의 공감각 전시</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">사운드 인스톨레이션을 통한 명상 상태 경험</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">손과 귀, 몸으로 리듬을 직접 만드는 관객 주도형 퍼포먼스</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">아름다운 빛과 화음의 조화로운 인터렉티브 사운드 아트</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">소리의 울림을 경험할 수 있는 몰입형 4D 사운드 공간</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">라이트 아트, 비주얼 뮤직을 통한 공간 경험</div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="ei-contents-items">소리를 만들고, 상상하고, 즐기며 온 몸으로 소리를 감각하다!</div>
+                            <div data-aos="zoom-in" data-aos-duration="2000" class="ei-contents-items ei-contents-subtitle">이 모든 경험, 오직 사운드 뮤지엄에서만.</div>
+                        </div>
+                    </section>
+                    <section class="ei-artist">
+                        <h3 class="ei-c-title">세계적인 아티스트 참여</h3>
+                        <div class="ei-artist-wrap">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb01"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">로빈 미나드 Robin Minard</span>
+                                            <span class="artist-txt-info">공간음향의 거장</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb02"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">다비드 헬비히 David Helbich</span>
+                                            <span class="artist-txt-info">유럽 사운드 퍼포먼스 아트의 중심</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb03"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">랩212 Lab212</span>
+                                            <span class="artist-txt-info">프랑스 인터랙티브 디자인 아티스트</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb04"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">박보나 Bona Park</span>
+                                            <span class="artist-txt-info">상황적 재현의 떠오르는 루키</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb05"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">도론 사제 Doron Sadja</span>
+                                            <span class="artist-txt-info">뮤직 아트 페스티벌의 노이즈 뮤직 아티스트</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb06"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">로버트 헨케 Robert Henke</span>
+                                            <span class="artist-txt-info">현대 전자 음악의 아이콘</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb07"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">모놈 MONOM</span>
+                                            <span class="artist-txt-info">4D 공간 사운드 시스템의 선구자</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb08"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">바스쿠와 클루그 Vasku & Klug</span>
+                                            <span class="artist-txt-info">기술에 예술을 입히는 디자인 스토리텔러 듀오</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb09"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">크리스틴 오펜하임 Kristin Oppenheim</span>
+                                            <span class="artist-txt-info">미니멀리즘 사운드 인스톨레이션의 대가</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="artist-img thumb10"></figure>
+                                        <div class="artist-txt">
+                                            <span class="artist-txt-name">CVM Center for Visual Music</span>
+                                            <span class="artist-txt-info">세계 최대의 비주얼 음악 필름 아카이브 센터</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="ei-detail">
+                        <div class="ei-detail-wrap row">
+                            <h3 class="ei-c-title">더 알아보기</h3>
+                            <div class="ei-detail-box-wrap">
+                                <div class="ei-detail-box">
+                                    <span class="material-icons material-icons-outlined">info</span>
+                                    <h4 class="ei-detail-box-title">관람 안내</h4>
+                                    <a class="ei-detail-box-link" href="../html/info.html"></a>
+                                </div>
+                                <div class="ei-detail-box">
+                                    <span class="material-icons material-icons-outlined">confirmation_number</span>
+                                    <h4 class="ei-detail-box-title">예매하기</h4>
+                                    <a class="ei-detail-box-link" href="../html/booking.html"></a>
+                                </div>
+                                <div class="ei-detail-box">
+                                    <span class="material-icons material-icons-outlined">add_circle</span>
+                                    <h4 class="ei-detail-box-title">자세히 알아보기</h4>
+                                    <a class="ei-detail-box-link" href="../html/dstory.html"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="footer-wrap row">
+                <div class="footer-top">
+                    <ul class="footer-legal">
+                        <li>
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                         <li>
+                            <a href="#">문화체육관광부</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-sns">
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.youtube.com/user/DaelimMuseum" target="_blank">Youtube</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow noreferrer" href="https://www.instagram.com/daelimmuseum/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                             <a rel="nofollow noreferrer" href="https://www.facebook.com/daelimmuseum" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-name">(재)대림문화재단</div>
+                    <ul class="footer-info">
+                        <li>사업자등록번호 : 305-82-09028</li>
+                        <li>주소 : 서울특별시 종로구 자하문로4길 21(통의동 35-1)</li>
+                        <li>대표전화 : 02-6233-7200</li>
+                    </ul>
+                    <div class="footer-copyright">
+                            Copyright ⓒ 2021 Daelim Museum. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

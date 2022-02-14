@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black-color);
+    line-height: 1.55;
+    letter-spacing: -0.0125em;
+    min-width: 360px;
+    word-break: keep-all;
+}
+input,
+button,
+select,
+textarea {
+    color: inherit;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+::selection {
+    background-color: var(--black-color);
+    color: #fff;
+}
+
+/*
+    CSS Variables
+*/
+:root {
+    --row-safe-gutter: 20px;
+    --header-height: 46px;
+    --violet-color: #cc00cc;
+    --black-color: #1d1d1d;
+    --contents-background-color: #f7f7f7;
+    --header-margin: 12px;
+}
+
+
+/*
+    common style
+*/
+.row,
+.row-wide {
+    padding-left: var(--row-safe-gutter);
+    padding-right: var(--row-safe-gutter);
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    max-width: 1024px;
+}
+.row-wide {
+    max-width: 1440px;
+}
+
+/*
+    global header
+*/
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 46px;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+@supports not (backdrop-filter: saturate(180%) blur(20px)) {
+    .fixed-header {
+        background-color: rgba(0,0,0,0.88);
+    }
+}
+.header-list {
+    margin-left: calc(-1 * var(--header-margin));
+    margin-right: calc(-1 * var(--header-margin));
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    fill: #fff;
+    opacity: 0.8;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 3px;
+}
+.header-item-link {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 100;
+    padding: 12px;
+    transition: all 0.23s;
+}
+.header-item-link:hover {
+    opacity: 1;
+}
+.touchevents .header-item-link {
+    opacity: 1;
+}
+.mobile-gnb {
+    display: none;
+}
+
+/*
+    main
+*/
+.main {
+    padding-top: var(--header-height);
+}
+
+/*
+    page-heading
+*/
+.page-heading {
+    height: 54px;
+    border-bottom: 1px solid #ddd;
+}
+.page-heading-wrap {
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+.page-heading-txt {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/*
+    banner
+*/
+.exhibition-banner {
+    margin-top: 100px;
+}
+.e-banner {
+    background-image: url(../img/mainbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.22em;
+    height: 220px;
+}
+.e-banner-txt,
+.e-banner-txt a {
+    color: #fff;
+}
+.e-banner-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+.e-banner-title {
+    font-size: 24px;
+}
+.e-banner-link-box {
+    margin-top: 20px;
+}
+.e-banner-link {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+}
+.e-banner-link:hover .e-banner-link-txt {
+    text-decoration-line: underline;
+}
+
+/*
+    booking
+*/
+.booking {
+    position: relative;
+    margin-top: 80px;
+}
+.booking-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.ex-img {
+    width: 390px;
+    height: 487px;
+    background-image: url(../img/exhibition-img.jpg);
+    border-radius: 1.2em;
+}
+.ex-info {
+    width: 500px;
+}
+.ex-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.ex-description {
+    margin-bottom: 26px;
+}
+.ex-detail {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.ex-detail-box {
+    margin-top: 20px;
+}
+.ex-detail-box h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.ex-hours,
+.ex-price {
+    line-height: 1.62em;
+}
+.booking-btn {
+    margin-top: 34px;
+    text-align: center;
+}
+.booking-btn-link {
+    background: none;
+    color: var(--black-color);
+    font-size: 15px;
+    padding: 8px 72px;
+    border: 1px solid var(--black-color);
+    border-radius: 20px;
+    display: inline-block;
+}
+.booking-btn-link:hover {
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
+    color: #fff;
+}
+
+/*
+    faq
+*/
+.faq {
+    background-color: var(--contents-background-color);
+    margin-top: 100px;
+    margin-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.faq {
+    display: flex;
+    justify-content: center;
+}
+.faq-wrap {
+    text-align: center;
+}
+.faq-heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+.faq-text {
+    font-size: 15px;
+    margin-top: 18px;
+    line-height: 1.8em;
+}
+.tel a {
+    color: var(--black-color);
+}
+
+/*
+    footer
+*/
+.footer {
+    background-color: var(--contents-background-color);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 13px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+}
+.footer-legal {
+    display: flex;
+}
+.footer-legal a {
+    color: var(--black-color);
+    font-weight: 400;
+}
+.footer-legal li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.7em;
+    background-color: #aaa;
+    margin: 0 0.5em;
+}
+.footer-sns {
+    display: flex;
+}
+.footer-sns a {
+    color: #868686;
+}
+.footer-sns li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.7em;
+    background-color: #aaa;
+    margin: 0 0.5em;
+}
+.footer-bottom {
+    padding-top: 16px;
+    color: #868686;
+}
+.footer-info {
+    display: flex;
+    margin-top: 3px;
+}
+.footer-info li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.7em;
+    margin: 0 0.8em;
+    background-color: #aaa;
+}
+.footer-copyright {
+    margin-top: 3px;
+}
+.footer a:hover {
+    text-decoration-line: underline;
+}
